@@ -1,0 +1,136 @@
+body{
+    margin: 7px;
+}
+body *{
+    box-sizing: border-box;
+}
+header, aside, main, footer{
+    color: #2ECFCA;
+    border: 2px solid #F8DF77;
+    background-color: #F9F3DE;
+    border-radius: 5px;
+}
+#body_display_grid{
+    background: linear-gradient(to bottom, #F9F3DE, #F8DF77, #FF4E62);
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "aside main_content"
+    "footer footer";
+    grid-gap: 15px 10px;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 7fr 1fr;
+}
+#header_flexbox{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aside_left_flexbox{
+    grid-area: aside;
+}
+#main_versatile{
+    grid-area: main_content;
+}
+#footer_flexbox{
+    grid-area: footer;
+}
+#div_hangul_flexbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: fit-content;
+}
+#div_hangul_flexbox *{
+    border-radius: 5px;
+    border-color: #FF4E62;
+}
+#hangul_title_flexbox{
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hangul_table{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+/*Everything until now is fine*/
+
+.hangul_table_rows td{
+    text-align: center;
+}
+.vertical_line{
+    border-right: 1px solid black;
+}
+.horizontal_line{
+    border-bottom: 1px solid black;
+}
+#footer_flexbox{
+    display: flex;
+    padding: 15px;
+    justify-content: right;
+    align-items: center;
+}
+.hangul_table_cells:hover{
+    background-color: #FF4E62;
+}
+#main_versatile.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+    transition-duration: 0.5s;
+}
+.popups{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+    background: linear-gradient(to bottom, #F9F3DE, #F8DF77, #FF4E62);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 8px;
+    border: 2px solid #F8DF77;
+    transition: all 300ms ease-in-out 300ms;
+    display: grid;
+    width: 50%;
+    height: 80%;
+    overflow: auto;
+    color: #2ECFCA;
+}
+.popups.active{
+    visibility: visible;
+    opacity: 1;
+    transition: all 300ms ease-in-out 300ms;
+}
+a{
+    text-decoration: none;
+    color: #2ECFCA;
+}
+
+/*
+#hangul_table{
+    display: flex;
+    margin: 10px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+#hangul_table tbody{
+    width: 100%;
+    height: 100%;
+}
+#hangul_table tbody tr{
+    display: flex;
+}
+#hangul_table tbody tr td{
+    flex: 1;
+
+}
+*/
