@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="korean.css">
+    <title>Korean Learning</title>
+</head>
+<body id="body_display_grid">
+<header id="header_flexbox">
+    <h1>Learning Korean</h1>
+</header>
+<aside id="aside_left_flexbox">
+    <p>Aside</p>
+</aside>
+<main id="main_versatile">
+    <div id="div_hangul_flexbox">
+        <h1 id="hangul_title_flexbox">Hangul Chart</h1>
+        <table lang="ko" id="hangul_table">
+            <tbody id="hangul_table_body">
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells"></td>
+                <td class="hangul_table_cells horizontal_line">ㅏ</td>
+                <td class="hangul_table_cells horizontal_line">ㅑ</td>
+                <td class="hangul_table_cells horizontal_line">ㅓ</td>
+                <td class="hangul_table_cells horizontal_line">ㅕ</td>
+                <td class="hangul_table_cells horizontal_line">ㅗ</td>
+                <td class="hangul_table_cells horizontal_line">ㅛ</td>
+                <td class="hangul_table_cells horizontal_line">ㅜ</td>
+                <td class="hangul_table_cells horizontal_line">ㅠ</td>
+                <td class="hangul_table_cells horizontal_line">ㅡ</td>
+                <td class="hangul_table_cells horizontal_line">ㅣ</td>
+                <td class="hangul_table_cells horizontal_line">ㅐ</td>
+                <td class="hangul_table_cells horizontal_line">ㅔ</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㄱ</td>
+                <td class="hangul_table_cells" onclick="toggle('popup_ga')">가</td>
+                <td class="hangul_table_cells">갸</td>
+                <td class="hangul_table_cells">거</td>
+                <td class="hangul_table_cells">겨</td>
+                <td class="hangul_table_cells">고</td>
+                <td class="hangul_table_cells">교</td>
+                <td class="hangul_table_cells">구</td>
+                <td class="hangul_table_cells">규</td>
+                <td class="hangul_table_cells">그</td>
+                <td class="hangul_table_cells">기</td>
+                <td class="hangul_table_cells">개</td>
+                <td class="hangul_table_cells">게</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㄴ</td>
+                <td class="hangul_table_cells">나</td>
+                <td class="hangul_table_cells">냐</td>
+                <td class="hangul_table_cells">너</td>
+                <td class="hangul_table_cells">녀</td>
+                <td class="hangul_table_cells">노</td>
+                <td class="hangul_table_cells">뇨</td>
+                <td class="hangul_table_cells">누</td>
+                <td class="hangul_table_cells">뉴</td>
+                <td class="hangul_table_cells">느</td>
+                <td class="hangul_table_cells">니</td>
+                <td class="hangul_table_cells">내</td>
+                <td class="hangul_table_cells">네</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㄷ</td>
+                <td class="hangul_table_cells">다</td>
+                <td class="hangul_table_cells">댜</td>
+                <td class="hangul_table_cells">더</td>
+                <td class="hangul_table_cells">뎌</td>
+                <td class="hangul_table_cells">도</td>
+                <td class="hangul_table_cells">됴</td>
+                <td class="hangul_table_cells">두</td>
+                <td class="hangul_table_cells">듀</td>
+                <td class="hangul_table_cells">드</td>
+                <td class="hangul_table_cells">디</td>
+                <td class="hangul_table_cells">대</td>
+                <td class="hangul_table_cells">데</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㄹ</td>
+                <td class="hangul_table_cells">라</td>
+                <td class="hangul_table_cells">랴</td>
+                <td class="hangul_table_cells">러</td>
+                <td class="hangul_table_cells">려</td>
+                <td class="hangul_table_cells">로</td>
+                <td class="hangul_table_cells">료</td>
+                <td class="hangul_table_cells">루</td>
+                <td class="hangul_table_cells">류</td>
+                <td class="hangul_table_cells">르</td>
+                <td class="hangul_table_cells">리</td>
+                <td class="hangul_table_cells">래</td>
+                <td class="hangul_table_cells">레</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅁ</td>
+                <td class="hangul_table_cells">마</td>
+                <td class="hangul_table_cells">먀</td>
+                <td class="hangul_table_cells">머</td>
+                <td class="hangul_table_cells">며</td>
+                <td class="hangul_table_cells">모</td>
+                <td class="hangul_table_cells">묘</td>
+                <td class="hangul_table_cells">무</td>
+                <td class="hangul_table_cells">뮤</td>
+                <td class="hangul_table_cells">므</td>
+                <td class="hangul_table_cells">미</td>
+                <td class="hangul_table_cells">매</td>
+                <td class="hangul_table_cells">메</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅂ</td>
+                <td class="hangul_table_cells">바</td>
+                <td class="hangul_table_cells">뱌</td>
+                <td class="hangul_table_cells">버</td>
+                <td class="hangul_table_cells">벼</td>
+                <td class="hangul_table_cells">보</td>
+                <td class="hangul_table_cells">뵤</td>
+                <td class="hangul_table_cells">부</td>
+                <td class="hangul_table_cells">뷰</td>
+                <td class="hangul_table_cells">브</td>
+                <td class="hangul_table_cells">비</td>
+                <td class="hangul_table_cells">배</td>
+                <td class="hangul_table_cells">베</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅅ</td>
+                <td class="hangul_table_cells">사</td>
+                <td class="hangul_table_cells">샤</td>
+                <td class="hangul_table_cells">서</td>
+                <td class="hangul_table_cells">셔</td>
+                <td class="hangul_table_cells">소</td>
+                <td class="hangul_table_cells">쇼</td>
+                <td class="hangul_table_cells">수</td>
+                <td class="hangul_table_cells">슈</td>
+                <td class="hangul_table_cells">스</td>
+                <td class="hangul_table_cells">시</td>
+                <td class="hangul_table_cells">새</td>
+                <td class="hangul_table_cells">세</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅇ</td>
+                <td class="hangul_table_cells">아</td>
+                <td class="hangul_table_cells">야</td>
+                <td class="hangul_table_cells">어</td>
+                <td class="hangul_table_cells">여</td>
+                <td class="hangul_table_cells">오</td>
+                <td class="hangul_table_cells">요</td>
+                <td class="hangul_table_cells">우</td>
+                <td class="hangul_table_cells">유</td>
+                <td class="hangul_table_cells">으</td>
+                <td class="hangul_table_cells">이</td>
+                <td class="hangul_table_cells">애</td>
+                <td class="hangul_table_cells">에</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅈ</td>
+                <td class="hangul_table_cells">자</td>
+                <td class="hangul_table_cells">쟈</td>
+                <td class="hangul_table_cells">저</td>
+                <td class="hangul_table_cells">져</td>
+                <td class="hangul_table_cells">조</td>
+                <td class="hangul_table_cells">죠</td>
+                <td class="hangul_table_cells">주</td>
+                <td class="hangul_table_cells">쥬</td>
+                <td class="hangul_table_cells">즈</td>
+                <td class="hangul_table_cells">지</td>
+                <td class="hangul_table_cells">재</td>
+                <td class="hangul_table_cells">제</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅊ</td>
+                <td class="hangul_table_cells">차</td>
+                <td class="hangul_table_cells">챠</td>
+                <td class="hangul_table_cells">처</td>
+                <td class="hangul_table_cells">쳐</td>
+                <td class="hangul_table_cells">초</td>
+                <td class="hangul_table_cells">쵸</td>
+                <td class="hangul_table_cells">추</td>
+                <td class="hangul_table_cells">츄</td>
+                <td class="hangul_table_cells">츠</td>
+                <td class="hangul_table_cells">치</td>
+                <td class="hangul_table_cells">채</td>
+                <td class="hangul_table_cells">체</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅋ</td>
+                <td class="hangul_table_cells">카</td>
+                <td class="hangul_table_cells">캬</td>
+                <td class="hangul_table_cells">커</td>
+                <td class="hangul_table_cells">켜</td>
+                <td class="hangul_table_cells">코</td>
+                <td class="hangul_table_cells">쿄</td>
+                <td class="hangul_table_cells">쿠</td>
+                <td class="hangul_table_cells">큐</td>
+                <td class="hangul_table_cells">크</td>
+                <td class="hangul_table_cells">키</td>
+                <td class="hangul_table_cells">캐</td>
+                <td class="hangul_table_cells">케</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅌ</td>
+                <td class="hangul_table_cells">타</td>
+                <td class="hangul_table_cells">탸</td>
+                <td class="hangul_table_cells">터</td>
+                <td class="hangul_table_cells">텨</td>
+                <td class="hangul_table_cells">토</td>
+                <td class="hangul_table_cells">툐</td>
+                <td class="hangul_table_cells">투</td>
+                <td class="hangul_table_cells">튜</td>
+                <td class="hangul_table_cells">트</td>
+                <td class="hangul_table_cells">티</td>
+                <td class="hangul_table_cells">태</td>
+                <td class="hangul_table_cells">테</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅍ</td>
+                <td class="hangul_table_cells">파</td>
+                <td class="hangul_table_cells">퍄</td>
+                <td class="hangul_table_cells">퍼</td>
+                <td class="hangul_table_cells">펴</td>
+                <td class="hangul_table_cells">포</td>
+                <td class="hangul_table_cells">표</td>
+                <td class="hangul_table_cells">푸</td>
+                <td class="hangul_table_cells">퓨</td>
+                <td class="hangul_table_cells">프</td>
+                <td class="hangul_table_cells">피</td>
+                <td class="hangul_table_cells">패</td>
+                <td class="hangul_table_cells">페</td>
+            </tr>
+            <tr class="hangul_table_rows">
+                <td class="hangul_table_cells vertical_line">ㅎ</td>
+                <td class="hangul_table_cells">하</td>
+                <td class="hangul_table_cells">햐</td>
+                <td class="hangul_table_cells">허</td>
+                <td class="hangul_table_cells">혀</td>
+                <td class="hangul_table_cells">호</td>
+                <td class="hangul_table_cells">효</td>
+                <td class="hangul_table_cells">후</td>
+                <td class="hangul_table_cells">휴</td>
+                <td class="hangul_table_cells">흐</td>
+                <td class="hangul_table_cells">히</td>
+                <td class="hangul_table_cells">해</td>
+                <td class="hangul_table_cells">헤</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<div id="popup_ga" class="popups">
+    <h1>asdfasdf</h1>
+    <a href="javascript:void(0)" onclick="toggle('popup_ga')">X</a>
+</div>
+<footer id="footer_flexbox">
+    <h3>About us</h3>
+</footer>
+<script src="korean.js"></script>
+</body>
+</html>
