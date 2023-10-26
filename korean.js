@@ -4,3 +4,12 @@ const toggle = (popupID) => {
     let popup = document.getElementById(popupID);
     popup.classList.toggle('active');
 };
+const main_visibility = (selection) => {
+    let selectionVisibility = document.getElementById(selection);
+    if (selectionVisibility.style.visibility === "hidden"){
+        selectionVisibility.style.visibility = "visible";
+    }
+    else {
+        selectionVisibility.style.visibility = "hidden";
+    }
+};
