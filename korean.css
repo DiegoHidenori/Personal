@@ -42,6 +42,7 @@ header, aside, main, footer{
     display: flex;
     flex-direction: column;
     flex-basis: fit-content;
+    /*visibility: hidden;*/
 }
 #div_hangul_flexbox *{
     border-radius: 5px;
@@ -61,14 +62,18 @@ header, aside, main, footer{
 }
 /*Everything until now is fine*/
 
+.divisions{
+    visibility: hidden;
+}
+
 .hangul_table_rows td{
     text-align: center;
 }
 .vertical_line{
-    border-right: 1px solid black;
+    border-right: 1px solid;
 }
 .horizontal_line{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
 }
 #footer_flexbox{
     display: flex;
@@ -112,6 +117,19 @@ header, aside, main, footer{
 a{
     text-decoration: none;
     color: #2ECFCA;
+}
+#aside_left_flexbox{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#aside_left_flexbox a{
+    padding: 10px;
+}
+#aside_left_flexbox a:hover{
+    color: #FF4E62;
+    transition: 0.5s;
 }
 
 /*
