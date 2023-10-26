@@ -13,10 +13,15 @@
     <h1>Learning Korean</h1>
 </header>
 <aside id="aside_left_flexbox">
-    <p>Aside</p>
+    <a href="javascript:void(0)" onclick="main_visibility('div_hangul_flexbox')"><strong>Chart</strong></a>
+    <a href="javascript:void(0)" onclick="main_visibility('div_translation')"><strong>Translation</strong></a>
+    <a href="javascript:void(0)" onclick=""><strong>Essential Words</strong></a>
+    <a href="javascript:void(0)" onclick=""><strong>Words</strong></a>
+    <a href="javascript:void(0)" onclick=""><strong>Sentences</strong></a>
+    <a href="practice.html"><strong>Main Page</strong></a>
 </aside>
 <main id="main_versatile">
-    <div id="div_hangul_flexbox">
+    <div id="div_hangul_flexbox" class="divisions">
         <h1 id="hangul_title_flexbox">Hangul Chart</h1>
         <table lang="ko" id="hangul_table">
             <tbody id="hangul_table_body">
@@ -248,11 +253,19 @@
             </tbody>
         </table>
     </div>
+    <div id="div_translation" class="divisions">
+        <h1>Translation section</h1>
+        <p>This is the translation section</p>
+    </div>
+    <div id="essential_words">
+        <p>This is the essential words section</p>
+    </div>
 </main>
 <div id="popup_ga" class="popups">
-    <h1>asdfasdf</h1>
+    <h1 lang="ko">가</h1>
     <a href="javascript:void(0)" onclick="toggle('popup_ga')">X</a>
 </div>
+
 <footer id="footer_flexbox">
     <h3>About us</h3>
 </footer>
